@@ -33,3 +33,16 @@ Sample playbooks are available in [playbooks](playbooks) directory
     - debug:
         msg: "{{ custom_value }}"
 ```
+
+## Appendix
+
+### Adding Roles as Submodules
+
+```shell
+$ git submodule add https://github.com/ginigangadharan/setup-ansible-user
+
+$ cat .gitmodules 
+[submodule "roles/setup-ansible-user"]
+        path = roles/setup-ansible-user
+        url = https://github.com/ginigangadharan/setup-ansible-user
+```
