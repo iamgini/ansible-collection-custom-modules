@@ -1,0 +1,21 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Gini Gangadharan
+  description: Setup first time Ansible user on Managed nodes
+  company: techbeatly
+  license: license (MIT, BSD)
+  min_ansible_version: 2.0
+  platforms:
+  - name: EL
+    versions:
+    - 6
+    - 7
+  galaxy_tags: 
+    - ansible
+    - user
+    - setup
+    - server
+    - node
+    - system

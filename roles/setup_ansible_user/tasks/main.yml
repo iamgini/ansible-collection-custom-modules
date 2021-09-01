@@ -1,0 +1,20 @@
+---
+# tasks file for setup-ansible-user
+- name: Create new user on managed node
+  user:
+    name: "{{ remote_user_name }}"
+    password: "{{ remote_user_password | password_hash('sha512') }}"
+    groups: wheel
+    append: yes
+
+- name: Add key to managed node
+  authorized_key:
+    user: "{{ remote_user }}"
+    key: "{{ remote_user_public_key }}"
+    manage_dir: yes
+  when: remote_user_public_key is defined
+
+- name: Add sudo entries for new user
+  copy:
+    content: "{{ remote_user }} ALL=(ALL) NOPASSWD: ALL"
+    dest: "/etc/sudoers.d/{{ remote_user }}"

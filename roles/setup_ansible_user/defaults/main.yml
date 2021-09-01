@@ -1,0 +1,6 @@
+---
+# defaults file for setup-ansible-user
+remote_user: devops
+
+# public key string for same user
+# remote_user_public_key: <public key string>
