@@ -1,3 +1,13 @@
-# Ansible Collection - ginigangadharan.custom_modules
+# Ansible Collection
 
-Documentation for the collection.
+Collection Name: ginigangadharan.custom_modules
+
+Install this collection locally:
+
+```shell
+ansible-galaxy collection install ginigangadharan.custom_modules
+```
+
+## Sample Playbooks
+
+Sample playbooks are available in [playbooks](playbooks) directory
