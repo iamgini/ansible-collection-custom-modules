@@ -18,7 +18,7 @@ options:
             - The name of the person.
         required: false
         type: string
-      
+
 author:
     - Gineesh Madapparambath (@ginigangadharan)
 '''
@@ -44,7 +44,9 @@ os_version:
     sample: Linux 4.18.0-305.el8.x86_64 #1 SMP Thu Apr 29 08:54:30 EDT 2021
 '''
 
-from ansible.module_utils.basic import *
+from ansible.module_utils.basic import AnsibleModule
+import platform
+
 
 def main():
     module_args = dict(
@@ -71,13 +73,13 @@ def main():
     # if message is fail, then fail
     if module.params['message'] == 'fail':
         module.fail_json(msg='Failing this module', **result)
-    
     if module.params['name']:
         source_name = module.params['name']
 
     result['greeting'] = module.params['message'] + " " + source_name
-    result['os_version'] = platform.system()+ " " + platform.release() + " " + platform.version()
+    result['os_version'] = platform.system() + " " + platform.release() + " " + platform.version()
     module.exit_json(**result)
+
 
 if __name__ == "__main__":
     main()
