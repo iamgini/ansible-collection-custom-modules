@@ -36,7 +36,7 @@ Sample playbooks are available in [playbooks](playbooks) directory
 
 ## Appendix
 
-### Adding Roles as Submodules
+### Adding Roles as Submodules (Not used)
 
 ```shell
 $ git submodule add https://github.com/ginigangadharan/setup-ansible-user
