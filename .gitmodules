@@ -1,0 +1,3 @@
+[submodule "roles/setup-ansible-user"]
+	path = roles/setup-ansible-user
+	url = https://github.com/ginigangadharan/setup-ansible-user
