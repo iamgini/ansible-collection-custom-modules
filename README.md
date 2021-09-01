@@ -18,7 +18,6 @@ $ ansible-playbook playbooks/3-hello-python yaml
 
 Sample playbooks are available in [playbooks](playbooks) directory
 
-Sample Playbook
 ```yaml
 ---
 - name: Testing Custom Module
