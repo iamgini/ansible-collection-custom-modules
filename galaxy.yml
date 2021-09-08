@@ -1,7 +1,7 @@
 ---
 namespace: ginigangadharan
 name: custom_modules
-version: 1.0.9
+version: 1.0.10
 readme: README.md
 authors:
   - Gineesh Madapparambath <net.gini@gmail.com>
