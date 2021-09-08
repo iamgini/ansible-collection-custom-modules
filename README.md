@@ -81,6 +81,8 @@ $ ansible-galaxy collection publish \
 
 ### Adding Roles as Submodules (Not used)
 
+I had a plan to use roles as submodules here and fetching from other role repositories but this has not been implemented for now.
+
 ```shell
 $ git submodule add https://github.com/ginigangadharan/setup-ansible-user
 
