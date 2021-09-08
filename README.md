@@ -52,6 +52,7 @@ $ ansible-playbook utilities/update-collection.yaml -e "tag=1.0.10"
 
 ```shell
 $ export ANSIBLE_GALAXY_TOKEN='YOUR_ANSIBLE_GALAXY_API_TOKEN'
+```
 
 **Building the collection archive**
 
