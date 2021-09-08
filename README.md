@@ -43,14 +43,19 @@ You can use either the GUI method (browsing the Zip file and upload to Ansible G
 I have an Ansible playbook which will build and publish the Ansible Collection with proper version tag. 
 
 ```shell
-% ansible-playbook utilities/update-collection.yaml -e "tag=1.0.10"
+$ ansible-playbook utilities/update-collection.yaml -e "tag=1.0.10"
 ```
 
 ## Publishing Ansible Collection Manually
 
+**Configure `ANSIBLE_GALAXY_TOKEN`**
+
+```shell
+$ export ANSIBLE_GALAXY_TOKEN='YOUR_ANSIBLE_GALAXY_API_TOKEN'
+
 **Building the collection archive**
 
-build command will create the collection archive with version information which you can publish to Ansible Galaxy (CLI or GUI).
+`ansible-galaxy collection build` command will create the collection archive with version information which you can publish to Ansible Galaxy.
 
 ```shell
 $ ansible-galaxy collection build
