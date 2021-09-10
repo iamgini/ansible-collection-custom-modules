@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include ginigangadharan.hello-demo"
+      include_role:
+        name: "ginigangadharan.hello-demo"
