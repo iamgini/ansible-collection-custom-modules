@@ -1,5 +1,0 @@
----
-# tasks file for ginigangadharan.hello-demo
-- name: Print Hello
-  debug:
-    msg: "Hello World"
