@@ -13,6 +13,7 @@ ansible-galaxy collection install ginigangadharan.custom_modules
 ```shell
 $ ansible-playbook playbooks/3-hello-python yaml
 ```
+
 ## Sample Playbooks
 
 Sample playbooks are available in [playbooks](playbooks) directory.
@@ -32,13 +33,14 @@ Sample playbooks are available in [playbooks](playbooks) directory.
     - debug:
         msg: "{{ custom_value }}"
 ```
-# Sharing Collection to Ansible Galaxy
+
+## Sharing Collection to Ansible Galaxy
 
 Always contribute back to the community !
 
 You can use either the GUI method (browsing the Zip file and upload to Ansible Galaxy) or the CLI method with API token. 
 
-## Publishing Ansible Collection using Ansible Playbook
+### Publishing Ansible Collection using Ansible Playbook
 
 I have an Ansible playbook which will build and publish the Ansible Collection with proper version tag. 
 
@@ -46,7 +48,7 @@ I have an Ansible playbook which will build and publish the Ansible Collection w
 $ ansible-playbook utilities/update-collection.yaml -e "tag=1.0.10"
 ```
 
-## Publishing Ansible Collection Manually
+### Publishing Ansible Collection Manually
 
 **Configure `ANSIBLE_GALAXY_TOKEN`**
 
